@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+ <main class="libromitir">
  <article>
   <h2> Agradecimientos</h2>
   <br>
@@ -15,31 +16,31 @@
    A mi madre Luz electromagnética, a la tía de adjetivo bonita en árabe, a Sofía por matar el hambre, a las profesoras Aurore Courtoy, Nancy Kanwisher, Ann-Sophie Barwich, Olivia Lanes, Sophie Wilson. A los profesores Peter Schiller, Krzysztof Palczewski, David Goodstein, Walter Lewin, Eugenio Ley Koo, James Mickens, Daniel Shiffman, Danny Cohen, Sam Esmail, a Gabriel Avelina Celi, al poeta Darío Jaramillo Agudelo por las razones del ausente Álvaro Rivera, a Roberto Juarroz, Antonio Porchia, Cesária Evora, Camilo Sesto, João Gilberto, Hope Sandoval, Mia Doi Todd, Paradis, Antonia Font, The Wake, Juan Stewart, Hablarás de mí (Doméstico), Entre Ríos,  Los Corraleros de Majagual, Los Gaiteros de San Jacinto, por su música, motivos, y fonemas o sus melodías que fueron mi inspiración, a Zack Davenport, Tammo Prinz, por los dodecaedros que usé en un popurrí de ciencia ficción y cartón, a la Wikipedia también, a Lopez D., Parra B., Cuellar W.J. por la sequencia de proteínas. A mi padre lobo del consejo Raphael Henry Kissinger, mi hermana, sobrina y abuela, a mis primos que vienen desde la NASA, a quienes la experiencia les enseñe que la vida es una ilusión ¿ó que son datos locales de los que tenemos toda una realidad por aprehender?, y que no deberíamos llorar ante las inecuaciones., pero eso es para alguno entre ellos, porque a mí, pues… sí también. 
   </p>
   <br>
-  <pre>
+
    <code>
-    [bits 16],
-    [org 0x7c00],
-    starting...,
-    Set up the segment registers,
-        mov ax, 0x0000,
-        mov ds, ax,
-        mov es, ax,
-        Load the kernel into memory,
-        mov bx, 0x8000,
-        mov dh, 0x00,
-        mov dl, 0x80,
-        boot device is at 0x80 (first hard drive),
-        mov ah, 0x2, function 2 is "read sectors",
-        mov al, 0x1 , read one sector,
-        int 0x13 , call the interrupt,
-        Start the kernel,
-        jmp 0x8000:0x0000,
-    Fill the rest of the boot sector with zeros,
-    times 510-($-$$) db 0,
-    The boot signature is required to identify the end of the boot, sector,
-    dw 0xaa55,
-    Reset,
+        [bits 16],
+        [org 0x7c00],
+        starting...,
+        Set up the segment registers,
+            mov ax, 0x0000,
+            mov ds, ax,
+            mov es, ax,
+            Load the kernel into memory,
+            mov bx, 0x8000,
+            mov dh, 0x00,
+            mov dl, 0x80,
+            boot device is at 0x80 (first hard drive),
+            mov ah, 0x2, function 2 is "read sectors",
+            mov al, 0x1, read one sector,
+            int 0x13, call the interrupt,
+            Start the kernel,
+            jmp 0x8000:0x0000,
+        Fill the rest of the boot sector with zeros,
+        times 510-($-$$) db 0,
+        The boot signature is required to identify the end of the boot, sector,
+        dw 0xaa55,
+        Reset,
   <code>
- </pre>
+</main>
 </body>
 </html>
