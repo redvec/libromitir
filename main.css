@@ -144,5 +144,33 @@ font-size: 0.5rem;
 }
 }
 
-
 /* Figuras */
+
+/* TYPEWRITER EFFECT */
+
+@keyframes typing {
+  from { width: 0; }
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+code {
+  animation: typing 4s steps(40), blink-caret 0.75s step-end infinite;
+}
+
+
+
+/* FAVICON */
+
+@media (prefers-color-scheme:light)  {
+#favicon {stroke: gret;} 
+.favicon--puntos {fill:black;}
+}
+@media (prefers-color-scheme:dark)  {
+#favicon {stroke:unset;}
+.favicon--puntos{fill:white}
+}    
+ 
+
+/* FAVICON */

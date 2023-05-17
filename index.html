@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <script src="functions.js"></script>
+    <link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
+
     <title>Libro de Omitir</title>
 </head>
 <body>
@@ -34,7 +35,29 @@
    bezier_curves,
    svg_path,
       </code>
+      <script>const codeElements = document.querySelectorAll('code');
+        codeElements.forEach((codeElement) => {
+          codeElement.innerHTML = codeElement.innerHTML.replace(/,/g, ',<br>');
+        });
+      </script>
 
+      <script>
+      const codeElements = document.querySelectorAll('code');
+
+      function typeWriter(element, text, index) {
+        if (index < text.length) {
+          element.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(() => typeWriter(element, text, index), Math.random() * 150 + 50); // Random delay between 50 and 200 milliseconds
+        }
+      }
+
+      codeElements.forEach((codeElement) => {
+        const text = codeElement.innerText;
+        codeElement.innerText = '';
+        typeWriter(codeElement, text, 0);
+      });
+      </script>
     </main>
 </body>
 </html>
