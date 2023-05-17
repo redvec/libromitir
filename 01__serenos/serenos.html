@@ -11,6 +11,7 @@
  <main class="libromitir">
      <code>
        <h2> &lt; SerenOS  &gt;</h2>
+       <br>
         Diánao电脑,
         Beta_0.2,
         Flip-flops:32768hz,
@@ -179,6 +180,11 @@
         &lt;/script&gt;,
         &lt;&lt;cout press scape to continue&gt;&gt;,
      </code>
+     <script>const codeElements = document.querySelectorAll('code');
+        codeElements.forEach((codeElement) => {
+          codeElement.innerHTML = codeElement.innerHTML.replace(/,/g, ',<br>');
+        });
+        </script>
 </main>
 </body>
 </html>
