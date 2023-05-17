@@ -9,7 +9,7 @@
   body {
     font-family: sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.1;
     color: #333;
   }
   
@@ -38,14 +38,11 @@
   }
 /* RESET */
 
-:root{
-    --fuente:16px;
-}
-
-
 .libromitir {
+display:grid;
 width:100%;
 height: 100%;
+place-content: center;
  
 }
   
@@ -53,9 +50,7 @@ height: 100%;
 
 @font-face {
  font-family: "Open Sans";
- src: url('https://example.com/OpenSans-Regular.woff2') format('woff2'),
- url('https://example.com/OpenSans-Regular.woff') format('woff');
-
+ src: url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800) format('woff2'),
 }
 
   
@@ -79,30 +74,22 @@ nav{
     text-align: center;
     font-size: 2rem;
     font-family: "Inconsolata", sans-serif;
-}
+    
+  }
 
 nav ul {
     font-size:1rem ;
     font-family: "Inconsolata", sans-serif;
 }
 
+
 code{
-   display: inline-block;
-   text-align: left; 
+   display:block;
+   text-align:center; 
    word-break: break-all;
-   font-size: 1rem;
-   overflow: hidden; /* Ensures the text stays within the container */
-   animation: typing 4s steps(22) 1s forwards; /* Adjust duration and steps as desired */
-   border-right: 0.15em solid #000; /* Simulates cursor blinking */
+   font-size: 0.5rem;
 }
-@keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+
 
 .prosa{
  font-family: "Open Sans", sans-serif;
@@ -116,20 +103,46 @@ code{
 /* TEMA */
 @media (prefers-color-scheme: light) 
 {
-
- body 
+ body, a 
   {
-
     background-color:#f4ecd8; /* Sepia background color */;
     color:black;
   }
 }
  @media (prefers-color-scheme: dark) 
 {
-  body 
+  body, a
   {
     background-color:black;
     color:white;
   }
 }
 /* TEMA */
+
+
+/* Figuras */
+
+#fig-1 {
+  width:10%;
+  height:200%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (prefers-color-scheme: dark) {
+#fig-1{
+  fill: var(--fill-color, white);
+}
+}
+
+@media (prefers-color-scheme: light) {
+#fig-1 {
+  fill: var(--fill-color, black);
+
+}
+}
+
+
+/* Figuras */
