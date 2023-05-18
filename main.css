@@ -164,12 +164,18 @@ code {
 /* FAVICON */
 
 @media (prefers-color-scheme:light)  {
-#favicon {stroke: gret;} 
-.favicon--puntos {fill:black;}
+/* #favicon, #favicon-fondo {background-color:yellowgreen;}  */
+#favicon-fondo {
+  background-color: #ffffff;
+  color: #000000;
+}
 }
 @media (prefers-color-scheme:dark)  {
-#favicon {stroke:unset;}
-.favicon--puntos{fill:white}
+/* #favicon, #favicon-fondo {background-color:white;} */
+#favicon-fondo {
+
+  background-color: #000000;
+  color: #ffffff;
 }    
  
 

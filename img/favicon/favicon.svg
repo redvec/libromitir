@@ -1,13 +1,23 @@
-<svg id="favicon" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000">
+<svg id="favicon" width="1001.22" height="1000.942" viewBox="0 0 264.906 264.833" xmlns="http://www.w3.org/2000/svg">
+<style> 
+#favicon-fondo {
+  fill: azure;
+}
+@media (prefers-color-scheme:light)  {
+#favicon-fondo {fill: #000000}
+.favicon-r{fill: white}
+}
+@media (prefers-color-scheme:dark)  {
+#favicon-fondo {fill: #ffffff}    
+}
+</style>
 
-<rect width="1000" height="1000" rx="500" ry="500">
+<path id="favicon-fondo" d="M264.658 128.74a132.256 132.219 0 0 1-127.86 135.824A132.256 132.219 0 0 1 .291 137.425 132.256 132.219 0 0 1 126.778.32a132.256 132.219 0 0 1 137.78 125.757" />
+    <g>
+      <circle class="favicon-r" cx="107.553" cy="213.122" r="24.994"/>
+      <circle class="favicon-r" cx="187.885" cy="133.863" r="24.994"/>
+      <circle class="favicon-r" cx="107.619" cy="132.887" r="24.994"/>
+      <circle class="favicon-r" cx="107.313" cy="53.014" r="24.994"/>
+    </g>
 
-</rect>
-  <g transform="matrix(3.7209302325581395,0,0,3.7209302325581395,218.43023255813955,120.40697674418607)">
-  <circle class="favicon--puntos" cx="25" cy="105" r="25"></circle>
-  <circle class="favicon--puntos" cx="80" cy="50"  r="25"></circle>
-  <circle class="favicon--puntos" cx="80" cy="105" r="25"></circle>
-  <circle class="favicon--puntos" cx="80" cy="160" r="25"></circle>
-  </g>
-  
 </svg>
