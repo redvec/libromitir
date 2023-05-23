@@ -4,11 +4,12 @@
   fill: azure;
 }
 @media (prefers-color-scheme:light)  {
-#favicon-fondo {fill: #000000}
-.favicon-r{fill: white}
+#favicon-fondo {fill: yellow}
+.favicon-r{fill:black}
 }
 @media (prefers-color-scheme:dark)  {
-#favicon-fondo {fill: #ffffff}    
+#favicon-fondo {fill: none}   
+.favicon-r{fill:white} 
 }
 </style>
 

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es un libro de omitir">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
-
+    <script src="/functions.js"></script>
     <title>Libro de Omitir</title>
 </head>
 <body>
-    <main class="libromitir">
+  <main class="libromitir">
     <br>
     <h1>El Libro de Omitir</h1>
     <br>
@@ -29,35 +30,14 @@
       <br>
       <br>
 
-      <code>
-   %pdf 1.1,
-   parton_distribution_functions,
-   bezier_curves,
-   svg_path,
-      </code>
-      <script>const codeElements = document.querySelectorAll('code');
-        codeElements.forEach((codeElement) => {
-          codeElement.innerHTML = codeElement.innerHTML.replace(/,/g, ',<br>');
-        });
-      </script>
+   <code class="typewriter">
+    <P class="typewriter-delay"> %pdf 1.1,<p> 
+    <P class="typewriter-delay"> parton_distribution_functions,<p> 
+    <P class="typewriter-delay"> bezier_curves,<p> 
+    <P class="typewriter-delay"> svg_path,<p> 
+   </code>
+      
 
-      <script>
-      const codeElements = document.querySelectorAll('code');
-
-      function typeWriter(element, text, index) {
-        if (index < text.length) {
-          element.innerHTML += text.charAt(index);
-          index++;
-          setTimeout(() => typeWriter(element, text, index), Math.random() * 150 + 50); // Random delay between 50 and 200 milliseconds
-        }
-      }
-
-      codeElements.forEach((codeElement) => {
-        const text = codeElement.innerText;
-        codeElement.innerText = '';
-        typeWriter(codeElement, text, 0);
-      });
-      </script>
-    </main>
+  </main>
 </body>
 </html>
