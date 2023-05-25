@@ -3,8 +3,8 @@
 /* RESET */
 
 :root{
-  --complementary:peru; /*Perú  lch(62.253% 54.011 63.677)    Oklab: l:0.678, a: 0.057, b: 0.109*/
-  --inverse:hsl(0, 0%, 10%);
+  --color--on:papayawhip; /*Perú  lch(62.253% 54.011 63.677)    Oklab: l:0.678, a: 0.057, b: 0.109*/
+  --color--off:hsl(0, 0%, 10%);
 /* GRID */
   --column-count:1;
 /* GRID */
@@ -54,21 +54,20 @@
 .libromitir {
 display:grid;
 grid-gap:1rem;
-/* grid-template-columns: repeat(var(--column-count),1fr); */
 width:100%;
 height: 100%;
-
 place-content: center;
 padding:1.5rem;
 }
+
   
 /* TIPOGRAFÍA */
 
 h1 {
- font-family: "Inconsolata", sans-serif;
- text-align: center;
- font-size: 2rem;
- font-family: monospace;
+font-family: "Inconsolata", sans-serif;
+text-align: center;
+font-size: 2rem;
+font-family: monospace;
 }
 
 h2 {
@@ -78,101 +77,97 @@ text-align: center;
 
 /* TIPOGRAFÍA DE LA TABLA DE CONTENIDO*/
 nav{
-    text-align: center;
-    font-size: 2rem;
-    font-family: "Inconsolata", sans-serif;
+text-align: center;
+font-size: 2rem;
+font-family: "Inconsolata", sans-serif;
   }
 nav ul {
-    font-size:1rem ;
-    font-family: "Inconsolata", sans-serif;
+font-size:1rem ;
+font-family: "Inconsolata", sans-serif;
 }
 /* TIPOGRAFÍA TABLA DE CONTENIDO */
 
-
 /*TIPOGRAFÍA DE ARTICLE*/
 .prosa{
- font-family: "Open Sans", sans-serif, monospace;
- font-size:1rem;
- text-align: justify;
+font-family: "Open Sans", sans-serif, monospace;
+font-size:1rem;
+text-align: justify;
 }
 /*TIPOGRAFÍA DE ARTICLE*/
 
 /*TIPOGRAFÍA DE SECTION*/v
-
 code.typewriter {
-  display: block;
-  font-family: "Inconsolata, sans-serif, monospace";
-  font-weight: bold ;
-  font-size: 0.5rem;
-  white-space: nowrap;
-  text-align:center;
-  }
+display: block;
+font-family: "Inconsolata, sans-serif, monospace";
+font-weight: bold ;
+font-size: 0.5rem;
+white-space: nowrap;
+}
 /*TIPOGRAFÍA DE SECTIONS*/
   
 /* CODE TAG ANIMATION */
-p, .typewriter-delay {
-  display: block;
-  word-break: break-all;
-  animation-name: typewriter-delay;
-  animation-duration: 4s; /* Adjust the duration as needed */
-  animation-timing-function: steps(100, end);
-
+.typewriter-delay {
+word-break: break-all;
+animation-name: typewriter-delay;
+animation-duration: 4s; /* Adjust the duration as needed */
+animation-timing-function: steps(100, end);
 }
 
 @keyframes typewriter-delay {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+from {
+width: 0%;
 }
+to {
+width: 100%;
+}
+}
+
 /* CODE TAG ANIMATION*/
 /* TIPOGRAFÍA */
 
 /* TEMA */
 @media (prefers-color-scheme: light) {
-  body, a 
-   {
-   background-color:var(--complementary); /* Sepia background color #f4ecd8 */;
-   color:var(--inverse);
-   color:;
-   }
- }
-  @media (prefers-color-scheme: dark) {
-   body, a
-   {
-   background-color:black;
-   color:white;
-   }
- }
- /* TEMA */
+body, a {
+background-color:var(--color--on); /* Sepia background color #f4ecd8 */;
+color:var(--color--off);
+}
+}
+@media (prefers-color-scheme: dark) {
+body, a
+{
+background-color:var(--color--off);
+color:var(--color--on);
+}
+}
+/* TEMA */
  
- 
- /* Figuras */
- 
- #fig-1 {
-   width:10%;
-   height:200%;
-   position: relative;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
- }
- 
- @media (prefers-color-scheme: dark) {
- #fig-1{
-   fill: var(--fill-color, white);
- }
- }
- 
- @media (prefers-color-scheme: light) {
- #fig-1 {
-   fill: var(--fill-color, black);
- 
- }
- }
- /* FIGURAS */
+/* FIGURAS */ /* FIGURAS */ /* FIGURAS *//* FIGURAS */
+
+/* FIGURA 1 */
+#fig-1 {
+width:10%;
+height:200%;
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+@media (prefers-color-scheme: dark) {
+#fig-1{
+fill: var(--fill-color, white);
+}
+}
+
+@media (prefers-color-scheme: light) {
+#fig-1 {
+fill: var(--fill-color, black);
+}
+}
+/* FIGURA 1 */
+
+
+/* FIGURAS */
 
 /* TEMA DEL FAVICONO */
 
