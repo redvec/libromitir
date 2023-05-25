@@ -1,24 +1,27 @@
-<svg id="favicon" width="1001.22" height="1000.942" viewBox="0 0 264.906 264.833" xmlns="http://www.w3.org/2000/svg">
+<svg class="favicon" width="1001.22" height="1000.942" viewBox="0 0 264.906 264.833" xmlns="http://www.w3.org/2000/svg">
+
 <style> 
-#favicon-fondo {
-  fill: azure;
-}
 @media (prefers-color-scheme:light)  {
-#favicon-fondo {fill: yellow}
-.favicon-r{fill:black}
+.favicon-fondo {fill:yellow}
+.favicon-r{fill:olive}
 }
 @media (prefers-color-scheme:dark)  {
-#favicon-fondo {fill: none}   
+.favicon-fondo {fill: none}   
 .favicon-r{fill:white} 
 }
 </style>
+<path class="favicon-fondo" 
+d="M264.658 128.74
+a132.256 132.219 0 0 1-127.86 135.824
+A132.256 132.219 0 0 1 .291 137.425 132.256 132.219 0 0 1 126.778.32
+a132.256 132.219 0 0 1 137.78 125.757" />
+<g>
+  <circle class="favicon-r" cx="107.553" cy="213.122" r="24.994"/>
+  <circle class="favicon-r" cx="187.885" cy="133.863" r="24.994"/>
+  <circle class="favicon-r" cx="107.619" cy="132.887" r="24.994"/>
+  <circle class="favicon-r" cx="107.313" cy="53.014" r="24.994"/>
+</g>
 
-<path id="favicon-fondo" d="M264.658 128.74a132.256 132.219 0 0 1-127.86 135.824A132.256 132.219 0 0 1 .291 137.425 132.256 132.219 0 0 1 126.778.32a132.256 132.219 0 0 1 137.78 125.757" />
-    <g>
-      <circle class="favicon-r" cx="107.553" cy="213.122" r="24.994"/>
-      <circle class="favicon-r" cx="187.885" cy="133.863" r="24.994"/>
-      <circle class="favicon-r" cx="107.619" cy="132.887" r="24.994"/>
-      <circle class="favicon-r" cx="107.313" cy="53.014" r="24.994"/>
-    </g>
+
 
 </svg>
