@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Este es un libro de omitir">
+ <link rel="stylesheet" href="/main.css">
+ <script src="/functions.js"></script>
+ <script>
+    function navigateToPreviousChapter() {
+        navigateToChapter(calculateChapterNumber() - 1);
+    }
+    
+    function navigateToNextChapter() {
+        navigateToChapter(calculateChapterNumber() + 1);
+    }
+    
+    function calculateChapterNumber() {
+        var currentChapter = document.getElementsByClassName("body").textContent;
+        return parseInt(currentChapter.substring(0, 2));
+    }
+    
+    function navigateToChapter(chapterNumber) {
+        var chapterFolder = chapterNumber.toString().padStart(2, '00') + "__";
+        var chapterURL = chapterFolder + "";
+        // CREATE A LIST OR MAP TO THE CHAPTER FOLDERS?
+        // Perform the navigation to the specified chapter URL
+        // Replace the following line with your actual code
+        console.log("Navigating to chapter: " + chapterURL);
+    }
+</script>
+ <title>Vago</title>
+</head>
+<body>
+ <main class="libromitir">
+    <section class="code-section">
+        <code class="typewriter">
+           <p class="typewriter-delay"> ~ sudo macchanger -r eth0: NEW MAC: a7:1e:4f:9e:28:6b,</p>
+           <p class="typewriter-delay"> Html.parser-alpha,</p>
+           <p class="typewriter-delay"> Atopos: Little endian,</p>
+        </code>
+    </section>
+     <article>
+         <h2 class="cabeceras">
+             <button class="button__previous" onclick="navigateToPreviousChapter()">&#60;</button>
+         Vago
+             <button class="button__forward" onclick="navigateToNextChapter()">&#62;</button>
+         </h2>
+         <br>
+         <p class="prosa"> 
+            Me gusta el helado de vainilla con arándanos :) ¿prefieres galletas? también hay queso crema, con tres porciones de cuarks en la arepa es suficiente para mi tejido glial: recién somos planos de maíz molidos y fritos en el devenir de la digestión universal, sin eso parece que colapsa la mirada. La ropa sigue siendo el músculo a contrapelo de la forma que prueba los estados vibracionales del agua en el tendedero, o de esta red de miradas de almidón y gluten recién horneado, por favor, no le eches suero a la salsa porque deja un sabor raro. Tampoco le hagas más espectroscopia al ramen, ni mucho menos al latte universal, se forman glu glu glu gluones bebidos ansiosamente.
+
+            Deja eso, las papas ya están muy calientes, sirve el antipasto que está en los mesones porque los amantes del rocío melanogaster ya sobrevuelan el queso antiazul, a la larga no importa cuán tostado parezca el pan, tanta más candela y cuanto menos decaerá el universo, o eso parece, porque todavía no recaemos a pesar del ayuno. 
+            Entre tantos tipos de cuark, el reloj con un pato iba entonando felizmente su cuak cuak cuak, sin eco por toda la casa buscando a deshoras su mac mac mac, una dirección física que lo reorientara en la red ¿por una baratija de cuarzo como esa es que nos despertamos tarde? Tan pingo, si fuera de Cesio ya tendríamos hasta nuestras cesantías. Pero, con un ping de latencia cero ¿no iríamos a velocidad infinita? Vivimos en el hueco… y otra vez nos quedamos sin aceite de mejorana… pero, tenemos la D-limonada recién exprimida
+            ¡Ma che pizza! 
+            Entonces reiniciemos la operación código espagueti, ¿prefieres azafrán o achiote?, un poco de microondas aquí, algo de wifi allá, son radiaciones de la vida doméstica, con ellas tenemos telecomunicaciones y hervidos, la diferencia entre un mensaje y una comida es la cantidad de energía, o lo que es lo mismo, entre un grito y una bomba. Mira la lluvia se acerca y amplifica el olor de los pinos, no como S-limonero .  
+            También tuve una noche que variaba de forma mu mu muónica, dando hasta dos vueltas para quedar en el mismo lugar, un momento anómalo tras otro y dos imágenes especulativas de su olor, parecen terpenos volando de sus labios. 
+            Dicen que la geosmina guarda correspondencia con la lluvia y las remolachas, la tierra mojada me trae recuerdos del vapor de arroz con paprika ¿te da ganas de picar algo, picar lo inasible, morder la tierra? Las delicias de la tierra mojándose, comer adobe o lamer el salitre de las rocas en la selva. 
+            Dicen que son esporas de microbios trasladados por corrientes de aire, yo aquí alucino con efluvios de bochorno cuántico y el vapor punk del ferrocarril cargado de añil, algodón, petricor y promesas de cubitos sabrosos hiperprocesados ¿estaré enfermo? todas las salsas me saben a cloro, los cortos circuitos huelen a maní o almendras quemándose.
+            Espera a que pruebes el estragón, ¿quedan almejas? ¿puse demasiado chile en mi filosofía de los huevos revueltos? ¿debí romperlos por el lado más angosto? Ja, el fuchile se parece a las hélices del ADN y el cáncer a la radiación ionizante, pero ¿con demasiado ají? 
+            Ya no más lágrimas por las cebollas ni borborigmos en la panza, mejor ponle más candelas al despertador ultravioleta para que me reinstale todas las mañanas como a otro sonámbulo sinecura, dime ¿acaso todos los neutrinos son diestros?, saquemos los termos con ARN, algo de computación y otro poco de Majorana a la terapia radioactiva contra el juego de la vida para que diseñemos nuestra propia antiterapia contra esta variante lingüística, y listo ¡Superkameokande! Ja ja ja
+         <br>
+     </article>
+    <section class="code-section">
+       <code class="typewriter">
+        <p class="typewriter-delay">Ping localhost [::1]: time&#60;1ms,</p>
+        <p class="typewriter-delay"> PET_Scan: social jetlag, </p>
+        <p class="typewriter-delay">RAID-0, </p>
+       </code>
+    </section>
+
+ </main>
+</body>
+</html>

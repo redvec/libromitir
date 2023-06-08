@@ -1,34 +1,22 @@
-// Check if the current character is a comma
-// Check if the current character is a comma
-// and add a line break after it
-// Add the next character to the code element
-// Increment the character index
-// Check if all characters have been typed
-// Clear the interval to stop typing
-// Adjust the typing speed here (in milliseconds)
-// Start the typewriter effect for each code element
+function navigateToPreviousChapter() {
+    navigateToChapter(calculateChapterNumber() - 1);
+}
 
-// const textElement = document.getElementById('serenos');
-// const text = textElement.innerHTML;
-// textElement.innerHTML = '';
+function navigateToNextChapter() {
+    navigateToChapter(calculateChapterNumber() + 1);
+}
 
-// for (const letter of text) {
-//   const letra = document.createElement('t');
-//   span.textContent = letter;
-//   textElement.appendChild(sp);
-// }
+function calculateChapterNumber() {
+    var currentChapter = document.querySelector(".libromitir").textContent;
+    var chapterNumber = parseInt(currentChapter.substring(0, 2));
+    return chapterNumber;
+}
 
-
-// const textElement = document.getElementById('serenos');
-// const text = textElement.innerHTML;
-// textElement.innerHTML = '';
-
-// const createTypewriterDelayElement = (letter) => {
-//   const typewriterDelayElement = document.createElement('p');
-//   typewriterDelayElement.textContent = letter;
-//   typewriterDelayElement.classList.add('typewriter-delay');
-//   return typewriterDelayElement;
-// };
-
-// const typewriterDelayElements = Array.from(text).map(createTypewriterDelayElement);
-// typewriterDelayElements.forEach((element) => textElement.appendChild(element));
+function navigateToChapter(chapterNumber) {
+    var chapterFolder = chapterNumber.toString().padStart(2, '0') + "__";
+    var chapterURL = chapterFolder + "chapter.html";
+    
+    // Perform the navigation to the specified chapter URL
+    // Replace the following line with your actual code
+    console.log("Navigating to chapter: " + chapterURL);
+}
