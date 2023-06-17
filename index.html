@@ -6,26 +6,62 @@
     <meta name="description" content="Este es un libro de omitir">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
-    <script src="/functions.js"></script>
+
     <title>Libro de Omitir</title>
 </head>
 <body>
   <main class="libromitir">
     <h1>El Libro de Omitir</h1>
     <br>
-    <nav>Index
-        <ul class="Index">
+    <nav> <button class="button__previous" onclick="navigateToPreviousChapter()">&#60;</button>
+      Index
+          <button class="button__forward" onclick="navigateToNextChapter()">&#62;</button>
+        
+    </nav>
+    <ul class="Index">
           <br>
           <li><a href="/00__agradecimientos/00__agradecimientos.html">Agradecimientos</a></li>
           <li><a href="/01__serenos/01__serenos.html">Serenos</a></li>
           <li><a href="/02__vago/02__vago.html">Vago</a></li>
-          <!-- Add more list items for each chapter -->
+          <li><a href="/03__caractervacio/03__caractervacio.html">Caracter Vacío</a></li>
+          <li><a href="/04__ontologia/04__ontologia.html">Ontología de lo Botones</a></li>
+          <li><a href="/05__carina/05__carina.html">♭eta  Carina</a></li>
+          <li><a href="/06__ilusion/06__ilusion.html">Ilusión de Sentido</a></li>
+          <li><a href="/07__imagina/07__imagina.html">Imagina</a></li>
+          <li><a href="/08__invitacion/08__invitacion.html">Invitación a la fuga</a></li>
+          <li><a href="/09__lonely/09__lonely.html">Lonely Tylenol</a></li>
+          <li><a href="/10__pachanga/10__pachanga.html">Pachanga</a></li>
+          <li><a href="/11__antimusica/11__antimusica.html">La Antimúsica lıllııllı</a></li>
+          <li><a href="/12__hombre/12__hombre.html">Hombre Bidimensional</a></li>
+          <li><a href="/13__universo/13__universo.html">El Universo</a></li>
+          <li><a href="/14__discalculia/14__discalculia.html">Discalculia</a></li>
+          <li><a href="/15__pseudociencia/15__pseudociencia.html">Pseudociencia</a></li>
+          <li><a href="/16__mu/16__mu.html">Mμ</a></li>
+          <li><a href="/17__parada/17__parada.html">La Parada 今 ɒ b ɒ ɿ ɒ ꟼ </a></li>
+          <li><a href="/18__reves/18__reves.html">ƨévɘɿ</a></li>
+          <li><a href="/19__poemas/19__poemas.html">Poemas a Diana</a></li>
+          <li><a href="/20__poemas/20__poemas.html">Gregario de la Cerna</a></li>
+          <li><a href="/21__gregario/21__gregario.html">Comer</a></li>
+          <li><a href="/22__comer/22__comer.html">Recurso</a></li>
+          <li><a href="/23__recurso/23__recurso.html">Techo</a></li>
+          <li><a href="/24__techo/24__techo.html">Punk Tokenizer</a></li>
+          <li><a href="/25__punk/24__punk.html">Aside</a></li>
+          <li><a href="/26__aside/26__aside.html">Stratus</a></li>
+          <li><a href="/27__status/27__status.html">Ventana</a></li>
+          <li><a href="/28__ventana/28__ventana.html">Choco</a></li>
+          <li><a href="/29__choco/29__choco.html">Hampa</a></li>
+          <li><a href="/30__hampa/30__hampa.html">Hapaxes</a></li>
+          <li><a href="/31__hapaxes/31__hapaxes.html">Anamnesis</a></li>
+          <li><a href="/32__anamnesis/32__anamnesis.html">Hipnosis</a></li>
+          <li><a href="/33__hipnosis/33__hipnosis.html">Un problema de Decisión</a></li>
+          <li><a href="/34__decision/34__decision.html">Tokyo</a></li>
+          <li><a href="/35__tokyo/35__tokyo.html">Inestabilidades que se Bifurcan</a></li>
+          <li><a href="/36__silicios/36__silicios.html">Campos Silicios</a></li>
+          <li><a href="/38__apropos/38__apropos.html">Deux ex Maquina</a></li>
+          <li><a href="/39__cafeteria/39__cafeteria.html">Cafetería 418</a></li>
+          <li><a href="/40__hachetml/40__hachetml.html">Hachetml</a></li>            
         </ul>
-      </nav>
-      <br>
-      <br>
-      <br>
-      <br>
+     
       <svg id="fig-1" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 118" ><path d="M63.5 1.3c-1.3 1-1.6 2.1-1.1 4.1.9 3.7 4 3.1 4.4-.8.4-3.7-.9-5-3.3-3.3zm-6.6 9.2c-.1.8-.2 2.3-.3 3.2-.1 1.2.7 1.9 2.2 2.1 1.9.3 2.2-.1 2.2-3.2 0-2.9-.4-3.6-2-3.6-1.1 0-2.1.7-2.1 1.5zm6 7.2c-.9 5.4.4 8 3 6.4 1.8-1.2 1-6.5-1.1-6.9-1-.2-1.9 0-1.9.5zm-4.6 8c-.8.3-1.3 2.2-1.3 4.4 0 3.7-.2 3.9-2.9 3.9-2.7 0-3 .3-3.3 3.7l-.3 3.8-8.5.5-8.5.5L33 46c-.4 2.6-1.1 3.5-3 4-2.5.6-2.5.8-2.8 11.8l-.3 11.1 8.8.3 8.8.3V78c0 4.2-.2 4.5-2.7 4.8-2.4.3-2.8.8-2.8 3.7v3.4l4.8-.2c4.5-.3 4.7-.4 5-3.5.2-1.8 1.1-3.6 2-4 1.5-.8 2.5-.8 5.7-.4 1.6.3.5 7.3-1.1 7.9-.8.3-1.4 1.9-1.4 3.9 0 3 .3 3.4 2.5 3.4s2.5-.4 2.5-3.5c0-3.6.2-3.8 5.5-3.9 2.7-.1 3-.4 2.8-3-.1-1.6-.7-3.3-1.4-3.7-2-1.2 4.8-2.1 7-.9 1.4.7 2.1 2.1 2.1 4 0 2.9.1 3 5.1 3h5l-.3-3.3c-.2-2.4-.7-3.1-2-2.9-2.8.4-3.9-3.2-2.9-9.1 0-.4 3.9-.7 8.6-.7H97V50.1l-2.7-.3c-2.3-.2-2.9-.9-3.3-3.8l-.5-3.5-8.2-.3c-5.6-.2-8.3-.7-8.4-1.5-.1-.7-.2-2.3-.2-3.7-.2-2.3-.7-2.5-6.2-3l-6-.5-.3-3.5c-.4-3.9-1.1-5-2.9-4.3zm28 22.7c2.7 2.1 2.1 3.9-.7 2.1-2.3-1.5-2.5-1.5-4.5.6-2 2.2-2.1 2.2-2.1.2 0-1.1 1-2.5 2.3-3.1 2.8-1.4 2.9-1.4 5 .2zM55.8 61.7c.3 3.1.3 3.1-4.8 3.4-6.2.5-7 .2-7-2.1 0-4 1-4.7 6.3-4.6 5.1.2 5.2.3 5.5 3.3zm23.7.3v3.5l-5-.1c-4.9-.1-5-.1-5.3-3.5l-.3-3.5 5.3.1 5.3.1V62zM27 94.4c0 1.8-.7 3.9-1.5 4.6-.8.7-1.5 2.5-1.5 4.1 0 2.4.4 2.9 2.5 2.9 2.2 0 2.5-.4 2.5-3.9 0-4 0-4 4.3-4.3 3.9-.3 4.2-.5 4.5-3.6l.3-3.2H27v3.4zm60 0c0 3.4.1 3.5 4.3 3.8 4.1.3 4.2.4 4.5 4 .3 3 .7 3.8 2.3 3.8 1.5 0 1.9-.7 1.9-3.1 0-1.7-.7-3.7-1.5-4.5-.8-.9-1.5-2.9-1.5-4.5 0-2.8-.1-2.9-5-2.9h-5v3.4zm-27.8 7.8c.2 2.5.8 3.3 2.3 3.3 1.5 0 2.1-.8 2.3-3.3.3-2.9.1-3.2-2.3-3.2s-2.6.3-2.3 3.2zm-40.8 5.3c-1.2 2.9.1 6 2.4 6.1 2 .1 2.3-.3 2-3.4-.2-2.5-.8-3.6-2.1-3.8-1-.1-2.1.4-2.3 1.1zm47-.1c-1.1 2.8 0 6.1 2.1 6.1 1.6 0 2-.7 2-3.5 0-2.5-.5-3.6-1.8-3.8-.9-.2-2 .3-2.3 1.2zm36.9-.2c-1.3 1.7-.1 6.3 1.7 6.3s3-4.6 1.7-6.3c-.5-.6-1.3-1.2-1.7-1.2-.4 0-1.2.6-1.7 1.2zm-41.6 7.5c-1.6 1.5-.6 3.3 1.8 3.3 2.3 0 2.4-.2 1.5-2-1.1-2.1-2.2-2.5-3.3-1.3zm36-.1c-1.4 1.5-.6 3.4 1.4 3.4 1.4 0 1.9-.5 1.7-1.7-.3-1.8-2-2.7-3.1-1.7zM24 116.5c0 .9.9 1.5 2.5 1.5s2.5-.6 2.5-1.5-.9-1.5-2.5-1.5-2.5.6-2.5 1.5z"/></svg>
       <br>
       <br>

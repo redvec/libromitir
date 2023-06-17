@@ -7,29 +7,6 @@
  <meta name="description" content="Este es un libro de omitir">
  <link rel="stylesheet" href="/main.css">
  <script src="/functions.js"></script>
- <script>
-    function navigateToPreviousChapter() {
-        navigateToChapter(calculateChapterNumber() - 1);
-    }
-    
-    function navigateToNextChapter() {
-        navigateToChapter(calculateChapterNumber() + 1);
-    }
-    
-    function calculateChapterNumber() {
-        var currentChapter = document.getElementsByClassName("body").textContent;
-        return parseInt(currentChapter.substring(0, 2));
-    }
-    
-    function navigateToChapter(chapterNumber) {
-        var chapterFolder = chapterNumber.toString().padStart(2, '00') + "__";
-        var chapterURL = chapterFolder + "chapter.html";
-        
-        // Perform the navigation to the specified chapter URL
-        // Replace the following line with your actual code
-        console.log("Navigating to chapter: " + chapterURL);
-    }
-</script>
  <title>ChapterTitle</title>
 </head>
 <body>
