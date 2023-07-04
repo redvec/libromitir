@@ -101,7 +101,7 @@ text-align: center;
 }
 
 /* TIPOGRAFÍA DE LA TABLA DE CONTENIDO*/
-nav{
+nav button a{
 text-align: center;
 font-size: 2rem;
 font-family: "Inconsolata", sans-serif;

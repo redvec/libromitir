@@ -7,30 +7,6 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta name="description" content="Este es un libro de omitir">
  <link rel="stylesheet" href="/main.css">
- <script src="/functions.js"></script>
- <script>
-    function navigateToPreviousChapter() {
-        navigateToChapter(calculateChapterNumber() - 1);
-    }
-    
-    function navigateToNextChapter() {
-        navigateToChapter(calculateChapterNumber() + 1);
-    }
-    
-    function calculateChapterNumber() {
-        var currentChapter = document.getElementsByClassName("body").textContent;
-        return parseInt(currentChapter.substring(0, 2));
-    }
-    
-    function navigateToChapter(chapterNumber) {
-        var chapterFolder = chapterNumber.toString().padStart(2, '00') + "__";
-        var chapterURL = chapterFolder + "";
-        // CREATE A LIST OR MAP TO THE CHAPTER FOLDERS?
-        // Perform the navigation to the specified chapter URL
-        // Replace the following line with your actual code
-        console.log("Navigating to chapter: " + chapterURL);
-    }
-</script>
  <title>Vago</title>
 </head>
 <body>
@@ -43,12 +19,13 @@
         </code>
     </section>
      <article>
-         <h2 class="cabeceras">
-             <button class="button__previous" onclick="navigateToPreviousChapter()">&#60;</button>
-         Vago
-             <button class="button__forward" onclick="navigateToNextChapter()">&#62;</button>
-         </h2>
-         <br>
+        <button class="button">
+         <a href="../01__serenos/01__serenos.html">&#60;</a>
+      </button>
+      <h2>Vago</h2>
+      <button class="button">
+         <a href="../00__agradecimientos/00__agradecimientos.html">&#62;</a>
+      </button>
          <p class="prosa"> 
             Me gusta el helado de vainilla con arándanos :) ¿prefieres galletas? también hay queso crema, con tres porciones de cuarks en la arepa es suficiente para mi tejido glial: recién somos planos de maíz molidos y fritos en el devenir de la digestión universal, sin eso parece que colapsa la mirada. La ropa sigue siendo el músculo a contrapelo de la forma que prueba los estados vibracionales del agua en el tendedero, o de esta red de miradas de almidón y gluten recién horneado, por favor, no le eches suero a la salsa porque deja un sabor raro. Tampoco le hagas más espectroscopia al ramen, ni mucho menos al latte universal, se forman glu glu glu gluones bebidos ansiosamente.
 
