@@ -1,11 +1,11 @@
 /* FALLBACKS TIPOGRÁFICOS *//* FALLBACKS TIPOGRÁFICOS *//* FALLBACKS TIPOGRÁFICOS */
 @font-face {
-font-family: 'Inconsolata';
-src:local ('/fonts/inconsolata/Inconsolata-Regular.ttf')  format('truetype');
+ font-family: 'Inconsolata';
+ src:local ('/fonts/inconsolata/Inconsolata-Regular.ttf')  format('truetype');
 }
 @font-face {
-font-family: 'Open Sans';
-src:local ('/fonts/OpenSans-VariableFont_width,wght.ttf') format('truetype-variations');
+ font-family: 'Open Sans';
+ src:local ('/fonts/OpenSans-VariableFont_width,wght.ttf') format('truetype-variations');
 }
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
@@ -17,6 +17,7 @@ src:local ('/fonts/OpenSans-VariableFont_width,wght.ttf') format('truetype-varia
 --color--on:papayawhip; /*Perú  lch(62.253% 54.011 63.677)    Oklab: l:0.678, a: 0.057, b: 0.109*/
 --color--off:hsl(0, 0%, 10%);
 --azul--off: hsl(240, 100%, 40%);
+--bermejo--visited:hsl(12, 100%, 35%);
 /* GRID */
 --column-count:2;
 /* GRID */
@@ -26,32 +27,32 @@ src:local ('/fonts/OpenSans-VariableFont_width,wght.ttf') format('truetype-varia
 /*******************************************************************************************/
 /* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
 body {
-font-size: 16px;
-line-height: 1.1;
-color: #333;
+ font-size: 16px;
+ line-height: 1.1;
+ color: #333;
 }
 a {
-text-decoration: none;
-color: #000;
+ text-decoration: none;
+ color: #000;
 }
 h1, h2, h3, h4, h5, h6 {
-font-weight: bold;
+ font-weight: bold;
 }
 ul, ol {
-list-style-type: none;
+ list-style-type: none;
 }
 img {
-max-width: 100%;
+ max-width: 100%;
 }
 @media (prefers-reduced-motion: reduce) {
 * {
-animation: none !important;
-transition: none !important;
+ animation: none !important;
+ transition: none !important;
 }
 }
 /* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET */
@@ -59,13 +60,13 @@ transition: none !important;
 
 /* GENERALIDADES DE PÁGINA *//* GENERALIDADES DE PÁGINA *//* GENERALIDADES DE PÁGINA */
 .libromitir {
-display:grid;
-column-count: var(--column-count);
-grid-gap:1rem;
-width:100%;
-height: 100%;
-place-content: center;
-padding:1.5rem;
+ display:grid;
+ column-count: var(--column-count);
+ grid-gap:1rem;
+ width:100%;
+ height: 100%;
+ place-content: center;
+ padding:1.5rem;
 }
 
 /* PAGINATION AND CELLPHONES */
@@ -74,9 +75,11 @@ padding:1.5rem;
     column-count: 1;
   }
 }
-
 /* GENERALIDADES DE PÁGINA *//* GENERALIDADES DE PÁGINA *//* GENERALIDADES DE PÁGINA */
+
 /**********************************************************************************************/
+/***************************************************************************************************************/
+/***************************************************************************************************************/
 
 /* TIPOGRAFÍA *//* TIPOGRAFÍA */  /* TIPOGRAFÍA *//* TIPOGRAFÍA */  /* TIPOGRAFÍA *//* TIPOGRAFÍA */  
 
@@ -89,72 +92,97 @@ padding:1.5rem;
 
 }
 h1 {
-font-family: "Inconsolata", monospace,  sans-serif;
-text-align: center;
-font-size: 2rem;
+ font-family: "Inconsolata", monospace,  sans-serif;
+ text-align: center;
+ font-size: 2rem;
 
 }
 
 h2 {
-font-family: "Inconsolata", monospace, sans-serif; 
-text-align: center;    
+ font-family: "Inconsolata", monospace, sans-serif;
+ text-align: center;
+ font-size:1.5rem;
 }
 
+
+/*NAVIGATION BUTTONS Y SU TIPOGRAFÍA*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*/
+button {
+  margin-left: 1%;
+  margin-right: 1%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+nav{
+  display: flex;
+  margin-left: 1%;
+  margin-right: 1%;
+  align-items: center;
+  justify-content: center;
+}
+
+a:visited, .button {
+  color:var(--bermejo--visited);
+  size: 1rem;
+}
+/*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*/
+
 /* TIPOGRAFÍA DE LA TABLA DE CONTENIDO*/
-nav button a{
-text-align: center;
-font-size: 2rem;
-font-family: "Inconsolata", sans-serif;
-  }
 ul li {
-font-size:1rem ;
-font-family: "Inconsolata", sans-serif;
-text-align: center;
+ font-size:1rem ;
+ font-family: "Inconsolata", sans-serif;
+ text-align: center;
 }
 /*TIPOGRAFÍA TABLA DE CONTENIDO*/
 
 /*TIPOGRAFÍA DE ARTICLE*/
 .prosa{
-font-family: "Open Sans", sans-serif, monospace;
-font-size:1.5rem;
-text-align: justify;
-line-height: 2rem ;
+ font-family: "Open Sans", sans-serif, monospace;
+ font-size:1.5rem;
+ text-align: justify;
+ line-height: 2rem ;
 }
 /*TIPOGRAFÍA DE ARTICLE*/
 
 /*TIPOGRAFÍA DE SECTION*/v
 code.typewriter {
-display: block;
-font-family: "Inconsolata, monospace";
-font-weight: bold ;
-font-size: 0.5rem;
-white-space: nowrap;
+ display: block;
+ font-family: "Inconsolata, monospace";
+ font-weight: bold ;
+ font-size: 0.5rem;
+ white-space: nowrap;
 }
 /*TIPOGRAFÍA DE SECTIONS*/
   
 /* CODE TAG ANIMATION *//* CODE TAG ANIMATION *//* CODE TAG ANIMATION */
 .typewriter-delay {
-word-break: break-all;
-animation-name: typewriter-delay;
-animation-duration: 4s; /* Adjust the duration as needed */
-animation-timing-function: steps(100, end);
+ word-break: break-all;
+ animation-name: typewriter-delay;
+ animation-duration: 4s; /* Adjust the duration as needed */
+ animation-timing-function: steps(100, end);
 }
 
 @keyframes typewriter-delay {
-from {
-width: 0%;
-}
-to {
-width: 100%;
-}
+ from {
+ width: 0%;
+ }
+ to {
+ width: 100%;
+ }
 }
 /* CODE TAG ANIMATION*//* CODE TAG ANIMATION *//* CODE TAG ANIMATION */
 
 
-/* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA */ /* TEMA */ 
+/* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA */ /* TEMA *//* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*/ /* TEMA *//* TEMA */ /* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*/ /* TEMA *//* TEMA */ 
 @media (prefers-color-scheme: light) {
 body, a {
-background-color:var(--color--on); /* Sepia background color #f4ecd8 */;
+background-color:var(--color--on);
 color:var(--color--off);
 }
 }
@@ -169,21 +197,32 @@ color:green;
 }
   
 }
-/* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*/ /* TEMA *//* TEMA */ 
+/* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*/ /* TEMA *//* TEMA *//* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*/ /* TEMA *//* TEMA */ /* TEMA*//* TEMA*//* TEMA*//* 
+
 /* TIPOGRAFÍA *//* TIPOGRAFÍA */  /* TIPOGRAFÍA *//* TIPOGRAFÍA */  /* TIPOGRAFÍA *//* TIPOGRAFÍA */ 
 /***************************************************************************************************************/
+/***************************************************************************************************************/
+/***************************************************************************************************************/
 
-/*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*/
-
-button {
-  background: none;
-  border: none;
-  color:var(--azul--off);
-  cursor: pointer;
-  font-size: inherit;
-  padding: 0;
+/* TRES PUNTOS  *//* TRES PUNTOS  *//* TRES PUNTOS  */
+#trois {
+  margin: 0%;
+  width:1%;
+  height:1%;
+  
 }
-/*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*/
+
+/* @media (prefers-color-scheme: light) {
+  #trois {
+  fill:var(--color--on);
+  }
+}
+@media (prefers-color-scheme: dark) {
+ #trois{
+   fill:var(--color--on);
+  }
+} */
+/* TRES PUNTOS  *//* TRES PUNTOS  *//* TRES PUNTOS  */
 
 /* FIGURAS */ /* FIGURAS */ /* FIGURAS *//* FIGURAS *//* FIGURAS */ /* FIGURAS */ /* FIGURAS */
 /* FIGURA 1 */
