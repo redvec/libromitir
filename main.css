@@ -14,10 +14,11 @@
 
 /* VARIABLES *//* VARIABLES *//* VARIABLES *//* VARIABLES */
 :root{
---color--on:papayawhip; /*Perú  lch(62.253% 54.011 63.677)    Oklab: l:0.678, a: 0.057, b: 0.109*/
---color--off:hsl(0, 0%, 10%);
---azul--off: hsl(240, 100%, 40%);
+--color--on:papayawhip; /*Perú  lch(62.253% 54.011 63.677)    Oklab: l:0.678, a: 0.057, b: 0.109*/--color--off:hsl(0, 0%, 10%);
+--azul--off: hsl(240, 100%, 30%);
+--negro--off: hsl(0, 0%, 10%);
 --bermejo--visited:hsl(12, 100%, 35%);
+--verde--verdero:	hsl(120, 100%, 25%);
 /* GRID */
 --column-count:2;
 /* GRID */
@@ -36,10 +37,10 @@ body {
  line-height: 1.1;
  color: #333;
 }
-a {
- text-decoration: none;
- color: #000;
+html{
+  scroll-behavior: smooth;
 }
+
 h1, h2, h3, h4, h5, h6 {
  font-weight: bold;
 }
@@ -55,6 +56,9 @@ img {
  transition: none !important;
 }
 }
+a{
+ text-decoration: none;
+}
 /* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET */
 /**********************************************************************************************/
 
@@ -62,7 +66,7 @@ img {
 .libromitir {
  display:grid;
  column-count: var(--column-count);
- grid-gap:1rem;
+ grid-gap:0.5rem;
  width:100%;
  height: 100%;
  place-content: center;
@@ -107,16 +111,16 @@ h2 {
 
 /*NAVIGATION BUTTONS Y SU TIPOGRAFÍA*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*/
 button {
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Inconsolata", sans-serif;
   font-weight: bold;
   background: none;
   border: none;
   cursor: pointer;
-  font-size: inherit;
+ 
 }
 
 nav{
@@ -127,10 +131,13 @@ nav{
   justify-content: center;
 }
 
-a:visited, .button {
-  color:var(--bermejo--visited);
-  size: 1rem;
-}
+
+
+/* .trespuntos, #trois, a{
+  width: 1%;
+  height: 1%;
+  color:grey;
+} */
 /*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*/
 
 /* TIPOGRAFÍA DE LA TABLA DE CONTENIDO*/
@@ -159,7 +166,6 @@ code.typewriter {
  white-space: nowrap;
 }
 /*TIPOGRAFÍA DE SECTIONS*/
-  
 /* CODE TAG ANIMATION *//* CODE TAG ANIMATION *//* CODE TAG ANIMATION */
 .typewriter-delay {
  word-break: break-all;
@@ -181,50 +187,65 @@ code.typewriter {
 
 /* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA */ /* TEMA *//* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*/ /* TEMA *//* TEMA */ /* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*/ /* TEMA *//* TEMA */ 
 @media (prefers-color-scheme: light) {
-body, a {
-background-color:var(--color--on);
-color:var(--color--off);
-}
+ body{
+ background-color:var(--color--on);
+ color:var(--negro--off);
+ }
+
+ a:visited, nav, button {
+ text-decoration: none;
+ color:var(--bermejo--visited);
+ }
+
+ a ul li:has(a:visited) {
+ color: var(--color--on);
+ }
+ p, .prosa {
+ color: var(--negro--off);
+  }
 }
 @media (prefers-color-scheme: dark) {
-body, a
-{
-background-color:var(--color--off);
-color:var(--color--on);
-}
-.typewriter-delay{
-color:green;
-}
-  
+ body {
+ background-color:var(--negro--off);
+ color:var(--color--on);
+ }
+ a,.prosa,.libromitir {
+ color:var(--color--on);
+ }
+ a ul li:has(a:visited){
+ color:var(--bermejo--visited)
+ }
+ .typewriter-delay{
+ color:var(--verde--verdero);
+ }
+ a:visited, .button {
+  color:var(--verde--verdero);
+  size: 1rem;
+ }
 }
 /* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*/ /* TEMA *//* TEMA *//* TEMA*//* TEMA*//* TEMA*//* TEMA*//* TEMA*/ /* TEMA *//* TEMA */ /* TEMA*//* TEMA*//* TEMA*//* 
+
+
 
 /* TIPOGRAFÍA *//* TIPOGRAFÍA */  /* TIPOGRAFÍA *//* TIPOGRAFÍA */  /* TIPOGRAFÍA *//* TIPOGRAFÍA */ 
 /***************************************************************************************************************/
 /***************************************************************************************************************/
 /***************************************************************************************************************/
 
+/* .bg {
+  background: url('data:image/svg+xml;utf8,<svg ...> ... </svg>');
+} */
+/* FIGURAS */ /* FIGURAS */ /* FIGURAS *//* FIGURAS *//* FIGURAS */ /* FIGURAS */ /* FIGURAS */
 /* TRES PUNTOS  *//* TRES PUNTOS  *//* TRES PUNTOS  */
 #trois {
-  margin: 0%;
-  width:1%;
-  height:1%;
-  
+content: url("data:image/svg+xml,>")
+ margin: 0%;
+ width:1%;
+ height:2%;
 }
-
-/* @media (prefers-color-scheme: light) {
-  #trois {
-  fill:var(--color--on);
-  }
-}
-@media (prefers-color-scheme: dark) {
- #trois{
-   fill:var(--color--on);
-  }
-} */
 /* TRES PUNTOS  *//* TRES PUNTOS  *//* TRES PUNTOS  */
 
-/* FIGURAS */ /* FIGURAS */ /* FIGURAS *//* FIGURAS *//* FIGURAS */ /* FIGURAS */ /* FIGURAS */
+
 /* FIGURA 1 */
 #fig-1 {
 width:10%;
