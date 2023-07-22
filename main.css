@@ -14,14 +14,14 @@
 
 /* VARIABLES *//* VARIABLES *//* VARIABLES *//* VARIABLES */
 :root{
---color--on:papayawhip; /*Perú  lch(62.253% 54.011 63.677)    Oklab: l:0.678, a: 0.057, b: 0.109*/--color--off:hsl(0, 0%, 10%);
---azul--off: hsl(240, 100%, 30%);
---negro--off: hsl(0, 0%, 10%);
---bermejo--visited:hsl(12, 100%, 35%);
---verde--verdero:	hsl(120, 100%, 25%);
-/* GRID */
---column-count:2;
-/* GRID */
+ --color--on:papayawhip; /*Perú  lch(62.253% 54.011 63.677)    Oklab: l:0.678, a: 0.057, b: 0.109*/--color--off:hsl(0, 0%, 10%);
+ --azul--off: hsl(240, 100%, 30%);
+ --negro--off: hsl(0, 0%, 10%);
+ --bermejo--visited:hsl(12, 100%, 35%);
+ --verde--verdero:	hsl(120, 100%, 25%);
+ /* GRID */
+ --column-count:2;
+ /* GRID */
 }
 /* VARIABLES *//* VARIABLES *//* VARIABLES *//* VARIABLES */
 
@@ -61,6 +61,9 @@ a{
 }
 /* RESET *//* RESET *//* RESET *//* RESET *//* RESET *//* RESET */
 /**********************************************************************************************/
+/**********************************************************************************************/
+/***************************************************************************************************************/
+/***************************************************************************************************************/
 
 /* GENERALIDADES DE PÁGINA *//* GENERALIDADES DE PÁGINA *//* GENERALIDADES DE PÁGINA */
 .libromitir {
@@ -75,9 +78,9 @@ a{
 
 /* PAGINATION AND CELLPHONES */
 @media (max-width: 600px) {
-  .libromitir {
-    column-count: 1;
-  }
+ .libromitir {
+  column-count: 1;
+ }
 }
 /* GENERALIDADES DE PÁGINA *//* GENERALIDADES DE PÁGINA *//* GENERALIDADES DE PÁGINA */
 
@@ -88,10 +91,16 @@ a{
 /* TIPOGRAFÍA *//* TIPOGRAFÍA */  /* TIPOGRAFÍA *//* TIPOGRAFÍA */  /* TIPOGRAFÍA *//* TIPOGRAFÍA */  
 
 /* SCALE FONTS *//* SCALE FONTS *//* SCALE FONTS *//* SCALE FONTS */
-@media screen and (max-width: 600px) {
-  .libromitir {
+@media screen and (max-width: 640px) {
+  p.libromitir {
    font-size: 4vw;
   }
+  nav {
+   display:flexbox;
+   justify-content: center;
+   align-items: center;
+  }
+ 
 /* SCALE FONTS *//* SCALE FONTS *//* SCALE FONTS *//* SCALE FONTS */
 
 }
@@ -127,16 +136,10 @@ nav{
   margin-left: 1%;
   margin-right: 1%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 
-
-/* .trespuntos, #trois, {
-  width: 3%;
-  height:3% ;
-  color:grey;
-} */ */
 /*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*//*NAVIGATION BUTTONS*/
 
 /* TIPOGRAFÍA DE LA TABLA DE CONTENIDO*/
@@ -164,7 +167,8 @@ code.typewriter {
  font-size: 0.5rem;
  white-space: nowrap;
 }
-/*TIPOGRAFÍA DE SECTIONS*/
+/*TIPOGRAFÍA DE SECTION*/
+
 /* CODE TAG ANIMATION *//* CODE TAG ANIMATION *//* CODE TAG ANIMATION */
 .typewriter-delay {
  word-break: break-all;
@@ -236,7 +240,14 @@ code.typewriter {
 } */
 /* FIGURAS */ /* FIGURAS */ /* FIGURAS *//* FIGURAS *//* FIGURAS */ /* FIGURAS */ /* FIGURAS */
 /* TRES PUNTOS  *//* TRES PUNTOS  *//* TRES PUNTOS  */
-#trois {
+
+button.trois {
+ width: 1%;
+ height: 3;
+ max-width: 100%;
+ max-height: 100%;
+} */
+/* #trois {
 content: url("data:image/svg+xml,>")
  margin: 0%;
  width:1%;
@@ -244,28 +255,39 @@ content: url("data:image/svg+xml,>")
 }
 /* TRES PUNTOS  *//* TRES PUNTOS  *//* TRES PUNTOS  */
 
+/* SVG *//* SVG *//* SVG *//* SVG *//* SVG *//* SVG *//* SVG *//* SVG */
+
+/* FIGURA 0 */
+.trespuntos, #trois, {
+ width: 3%;
+ height:3% ;
+ color:grey;
+}
 
 /* FIGURA 1 */
 #fig-1 {
-width:10%;
-height:200%;
-position: relative;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+ width:10%;
+ height:200%;
+ position: relative;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
 }
 
 @media (prefers-color-scheme: dark) {
-#fig-1{
-fill: var(--fill-color, white);
-}
+ #fig-1{
+ fill: var(--fill-color, white);
+ }
 }
 
 @media (prefers-color-scheme: light) {
-#fig-1 {
-fill: var(--fill-color, black);
-}
+ #fig-1 {
+ fill: var(--fill-color, black);
+ }
 }
 /* FIGURA 1 */ /* FIGURAS */ /* FIGURAS */ /* FIGURAS *//* FIGURAS *//* FIGURAS */ /* FIGURAS */ /* FIGURAS */
 
 
+/* SVG *//* SVG *//* SVG *//* SVG *//* SVG *//* SVG *//* SVG *//* SVG */
+
+/* IMG IMG IMG IMG IMG IMG IMG IMG IMG IMG IMG IMG */
